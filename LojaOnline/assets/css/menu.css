@@ -34,13 +34,23 @@
 
 /* ======================
      ITEM MENU ONE
-     ====================== */
+====================== */
 
 .itemOne {
   width: auto;
-  min-width: 130px;
+  max-width: 130px;
   height: 22px;
   position: relative;
+}
+
+.itemOne button {
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 152px;
+height: 22px;
+background-color: transparent;
+border: none;
 }
 
 .itemOne a {
@@ -359,8 +369,16 @@
 
 
 @media (min-width: 1280px) {
+
+
+  .dropdown {
+    min-width: 234px;
+
+  }
+
   .dropright {
-    min-width: 1090px; /* Volta ao valor original */
+    min-width: 1090px;
+    left: calc(100% + 78px);
   }
   
   .dropright ul{
@@ -373,36 +391,3 @@
 }
 
 
-/*
-.dropdown {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 234px;
-  height: 329px;
-  background-color: #f5f5f5;
-  opacity: 0.57;
-  padding: 10px 20px;
-  overflow-x: hidden;
-  overflow-y: auto;
-  max-height: 329px;
-  scrollbar-width: thin;
-  scrollbar-color: #cecece transparent;
-  box-shadow: -4px 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 5;
-}
-
-.dropright {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  background-color: #ffffff;
-  min-width: 1090px;
-  height: 329px;
-  padding: 10px;
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
-  z-index: 5;
-  white-space: nowrap;
-}

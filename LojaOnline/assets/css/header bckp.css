@@ -169,6 +169,7 @@ header {
   .large {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
     width: 100%;
   }
 
@@ -180,11 +181,11 @@ header {
   .headerPage__search {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
     max-width: 800px;
     padding-top: 17px;
-    gap: 65.42px;
+    gap: 40px;
   }
 
   .navigation__logo {
@@ -197,7 +198,6 @@ header {
     display: flex;
     justify-content: center;
     min-width: 450px;
-    margin: 0;
   }
 
   .clientArea {
@@ -216,11 +216,16 @@ header {
 }
 
 @media (min-width: 1280px) {
-
   .headerPage__search {
-    max-width: 1142px;
-    justify-content: flex-start;
-    margin-left: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 800px;
+    padding: 10px;
+    position: relative;
+    left: 50px;
+    gap: 40px;
   }
 
   .navigation__logo {
@@ -237,6 +242,14 @@ header {
     max-width: 550px;
   }
 
+  .large {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+
+
   .navigation__logo {
     flex: 1;
     min-width: 150px;
@@ -246,7 +259,7 @@ header {
     flex: 2;
     display: flex;
     justify-content: space-between;
-    max-width: 579px;
+    max-width: 650px;
   }
 
   .clientArea {
