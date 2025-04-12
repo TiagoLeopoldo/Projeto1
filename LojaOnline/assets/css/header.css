@@ -1,0 +1,272 @@
+/* ======================
+   MOBILE FIRST
+   ====================== */
+
+   header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* ======================
+     SEÇÃO PROMOÇÃO
+     ====================== */
+  
+  .promotion {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 390px;
+    min-height: 52px;
+    background-color: rgb(0, 92, 255);
+  }
+  
+  .promotion p {
+    max-width: 90%;
+    font-family: "Nunito Sans";
+    font-weight: 400;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #fff;
+    line-height: 1.5rem;
+    margin: auto;
+  }
+  
+  .promotion__destaque {
+    background-color: #6220c1;
+    padding: 0.2rem;
+  }
+  
+  .promotion__desconto {
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  /* ======================
+     NAVEGAÇÃO
+     ====================== */
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 390px;
+    min-height: 66px;
+  }
+  
+  .navigation__button {
+    padding: 0;
+  }
+  
+  .navigation__logo {
+    max-width: 100%;
+  }
+  
+  .navigation__cart {
+    background-color: transparent;
+  }
+  
+  /* ======================
+     BARRA DE PESQUISA
+     ====================== */
+  
+  .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 390px;
+    min-height: 66px;
+  }
+  
+  .search__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 361px;
+    min-height: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: auto;
+  }
+  
+  .search__container input {
+    width: 80%;
+    border: none;
+  }
+  
+  .search__container button {
+    border: none;
+    background-color: transparent;
+    margin-bottom: 3px;
+  }
+  
+  .promotion, 
+  .navigation, 
+  .search {
+    max-width: 100%;
+  }
+
+    /* ======================
+     MEDIA QUERIES HEADER
+     ====================== */
+  
+
+     
+     @media (min-width: 640px) {
+      .navigation {
+        max-width: 600px;
+        gap: 15px;
+      }
+    
+      .navigation__logo {
+        max-width: 160px;
+      }
+    
+      .search__container {
+        max-width: 400px;
+      }
+    }
+    
+    @media (min-width: 768px) {
+      .promotion {
+        height: 60px;
+      }
+    
+      .navigation {
+        max-width: 700px;
+        margin: auto;
+      }
+    
+      .search__container {
+        max-width: 450px;
+      }
+    }
+    
+    /* ======================
+       VISIBILIDADE DINÂMICA
+       ====================== */
+    
+    .small {
+      display: block;
+    }
+    
+    .large {
+      display: none;
+    }
+    
+    @media (min-width: 1024px) {
+      .small {
+        display: none;
+      }
+
+      .promotion, 
+      .navigation, 
+      .search {
+        min-width: 100%;
+      }
+    
+      .large {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+      }
+
+      .promotion p {
+        margin: auto 4px;
+        max-width: 546px;
+      }
+    
+      .headerPage__search {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 800px;
+        padding-top: 17px;
+        gap: 40px;
+      }
+    
+      .navigation__logo {
+        flex: 1;
+        min-width: 125px;
+      }
+    
+      .search__container {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        min-width: 450px;
+      }
+    
+      .clientArea {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 24px;
+      }
+    
+      .user-cart {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 24px;
+      }
+
+      
+    }
+    
+    @media (min-width: 1280px) {
+      .promotion {
+        font-size: 1.4rem;
+        max-width: 100%;
+      }
+    
+      .navigation {
+        max-width: 100%;
+      }
+    
+      .search__container {
+        max-width: 550px;
+      }
+    
+      .large {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+    
+      .headerPage__search {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        max-width: 800px;
+        padding: 10px;
+        position: relative;
+        left: 50px;
+        gap: 40px;
+      }
+    
+      .navigation__logo {
+        flex: 1;
+        min-width: 150px;
+      }
+    
+      .search__container {
+        flex: 2;
+        display: flex;
+        justify-content: space-between;
+        max-width: 650px;
+      }
+    
+      .clientArea {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 24px;
+      }
+    }

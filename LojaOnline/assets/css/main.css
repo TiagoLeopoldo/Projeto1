@@ -1,0 +1,81 @@
+
+/* banner smll and Md resolution */
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 8px;
+  width: 100%;
+  height: 306px;
+  background: url("../imgs/main/BancoBanner.png");
+  margin: auto 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+/* banner lg resolution */
+.backgroundBanner {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 510px;
+  background: linear-gradient(to bottom right, #E7E8EA 0%, #E8E9EB 50%, #ECEDEF 100%);
+  position: relative;
+}
+
+
+.backgroundBanner img {
+  position: absolute;
+  left: 315px;
+  width: 685px;
+  height: 100%;
+
+}
+
+.bannerPromo-container {
+  position: absolute;
+  right: 399px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  max-width: 577px;
+  height: 100%;
+  
+}
+
+.promo-super {
+  text-transform: uppercase;
+  font-family: 'Nunito Sans';
+  font-size: 100px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.promo-super span{
+  font-weight: 700;
+}
+
+.promo-off {
+  width: 100%;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 25px;
+  color: rgb(0, 92, 255);
+  letter-spacing: 6.5px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.promo-off span {
+  font-size: 60px;
+  letter-spacing: 0;
+}
