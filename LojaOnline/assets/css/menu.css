@@ -9,24 +9,24 @@
   justify-content: center;
   width: 100%;
   height: 22px;
-  padding: 0;
-}
+  margin: 23px 2px 18px 2px;}
 
 .menuNav__list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  gap: 53px;
-  min-width: 1261px;
-  max-width: 1261px;
+  justify-content: space-around;
+  gap: 40px;
+  width: 100%;
   height: 100%;
+  text-align: center;
+  margin: 0;
 }
 
 
 
 .menuNav__list .menuNav__list-item {
-  width: 94px;
+  width: 60px;
   height: 22px;
   font-weight: 400;
   font-size: 14px;
@@ -43,7 +43,8 @@
   position: relative;
 }
 
-.itemOne button {
+.itemOne button,
+.itemTwo button {
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -51,6 +52,10 @@ width: 152px;
 height: 22px;
 background-color: transparent;
 border: none;
+}
+
+.itemTwo button {
+  width: 91px;
 }
 
 .itemOne a {
@@ -291,10 +296,6 @@ border: none;
   position: relative;
 }
 
-.itemTwo a {
-  font-weight: 400;
-  font-size: 14px;
-}
 
 .itemTwo a:hover {
   font-weight: 700;
@@ -348,25 +349,6 @@ border: none;
   grid-row: 1 / 5;
   align-self: stretch;
 }
-
-
-@media (min-width: 1024px) {
-  .menuNav {
-    margin: 23px auto 18px auto ;
-  }
-
-  .menuNav__list {
-    gap: 40px;
-    width: 100%;
-    max-width: 1261px;
-    height: 100%;
-  }
-
-  .menuNav__list .menuNav__list-item {
-    max-width: 60px;
-  }
-}
-
 
 @media (min-width: 1280px) {
 
